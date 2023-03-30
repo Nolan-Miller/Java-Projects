@@ -1,3 +1,7 @@
+// This is a very simple program that I made to help me and my friends have a Mario Kart tournament. There
+// currently are not many safeguards or exception catches, but given the circumstance this was being used in
+// I didn't spend more than about 20 minutes on it.
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
