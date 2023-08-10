@@ -1,3 +1,6 @@
+// This class pairs with MarioKart.java
+// Player objects simply hold name and lives attributes with a few getter/setter methods
+
 public class Player {
     String name;
     int lives;

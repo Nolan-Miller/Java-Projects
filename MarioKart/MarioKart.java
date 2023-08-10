@@ -1,6 +1,5 @@
 // This is a very simple program that I made to help me and my friends have a Mario Kart tournament. There
-// currently are not many safeguards or exception catches, but given the circumstance this was being used in
-// I didn't spend more than about 20 minutes on it.
+// currently are not many safeguards or exception catches, given the circumstance this was being used in.
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,9 +7,11 @@ import java.util.Scanner;
 
 public class MarioKart {
     public static void main(String[] args) {
+        // Instantiate objects
         Scanner scnr = new Scanner(System.in);
         String p = "";
         ArrayList<Player> players = new ArrayList<>();
+        // Add Player objects
         while (!p.equals("done")) {
             System.out.print("Enter player name: ('done' to stop) ");
             p = scnr.nextLine();
@@ -21,6 +22,7 @@ public class MarioKart {
         }
         System.out.println();
         int i = 1;
+        // Create match ups while there are players still competing
         while (anyLives(players)) {
             Collections.shuffle(players);
             Player p1 = players.get(0);
